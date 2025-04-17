@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Pessoal</title>
+    <style>
+        /* Resetando margens e espaçamentos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fce4ec; /* Rosa claro */
+            color: #880e4f; /* Roxo forte */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #f50057; /* Rosa vibrante */
+            color: white;
+            text-align: center;
+            padding: 40px;
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        main {
+            width: 100%;
+            max-width: 900px;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #ffffff; /* Cor de fundo branca */
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #c2185b; /* Rosa mais escuro */
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            font-size: 1.2rem;
+            color: #880e4f;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        ul li:before {
+            content: "●";
+            position: absolute;
+            left: 0;
+            color: #f50057; /* Cor do ponto rosa */
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #880e4f;
+            font-size: 1rem;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+
+            ul li {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bem-vindo à Minha Página!</h1>
+        <p>Sou um Estudante de Programação - Apaixonado por Tecnologia.</p>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="section-title">Minhas Habilidades</div>
+            <ul>
+                <li>Lógica de Programação</li>
+                <li>HTML e CSS</li>
+                <li>Trabalho em Equipe</li>
+                <li>Redes e IoT</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <div class="section-title">Cursos Realizados</div>
+            <ul>
+                <li>Introdução à Programação</li>
+                <li>HTML e CSS Básico</li>
+                <li>Arduino e Eletrônica</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
